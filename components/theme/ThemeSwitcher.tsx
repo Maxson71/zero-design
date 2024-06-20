@@ -13,23 +13,28 @@ const ThemeSwitcher = () => {
     setMounted(true);
   }, []);
 
-  if (!mounted) {
-    return null;
-  }
+  if(!mounted) return null
 
   const handleTheme = () => {
-    if (theme === "light") {
-      setTheme("dark");
-    } else {
-      setTheme("light");
-    }
+    setTheme(theme === 'light' ? 'dark' : 'light');
   };
 
   return (
     <div>
-      <button onClick={handleTheme}>
-        {theme === "light" ? "Switch to dark mode" : "Switch to light mode"}
-      </button>
+      <Switch
+          defaultSelected
+          size="lg"
+          color="warning"
+          thumbIcon={({ isSelected, className }) =>
+              isSelected ? (
+                  <SunIcon className={className} />
+              ) : (
+                  <MoonIcon className={className} />
+              )
+          }
+          onClick={handleTheme}
+      >
+      </Switch>
     </div>
   );
 };
