@@ -23,3 +23,15 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+[data-theme="light"] .circle {
+  background-color: rgb(0, 0, 0);
+}
+
+[data-theme="dark"] .circle {
+  background-color: rgb(225, 225, 225);
+}
+
+.logo:hover .circle {
+  transform: translateY(0rem);
+}
