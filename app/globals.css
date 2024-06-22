@@ -24,11 +24,11 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-[data-theme="light"] .circle {
-  background-color: rgb(0, 0, 0);
+[data-theme="light"] .logo .circle {
+  background-color: rgb(17, 24, 28);
 }
 
-[data-theme="dark"] .circle {
+[data-theme="dark"] .logo .circle {
   background-color: rgb(225, 225, 225);
 }
 

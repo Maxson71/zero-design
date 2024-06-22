@@ -20,7 +20,6 @@ const ThemeSwitcher = () => {
   };
 
   return (
-    <div>
       <Switch
         isSelected={theme === "light"}
         size="lg"
@@ -34,7 +33,6 @@ const ThemeSwitcher = () => {
         }
         onChange={handleTheme}
       ></Switch>
-    </div>
   );
 };
 
