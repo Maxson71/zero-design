@@ -24,14 +24,10 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-[data-theme="light"] .logo .circle {
-  background-color: rgb(17, 24, 28);
-}
-
-[data-theme="dark"] .logo .circle {
-  background-color: rgb(225, 225, 225);
-}
-
 .logo:hover .circle {
   transform: translateY(0rem);
+}
+
+.button {
+  @apply bg-foreground text-background flex items-center justify-center px-7 py-3.5 leading-tight;
 }

@@ -67,7 +67,7 @@ const Logo = ({size = 1}) => {
               />
           </svg>
           <div
-              className="circle w-8 h-8 bg-var(--foreground-rgb) -translate-y-2.5 rounded-full transition-all duration-300"></div>
+              className="circle w-8 h-8 bg-foreground -translate-y-2.5 rounded-full transition-all duration-300"></div>
       </Link>
   );
 };

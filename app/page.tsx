@@ -6,7 +6,7 @@ export default function Home() {
     <ThemeProvider>
       <Hotbar />
       <main className="flex min-h-screen flex-col items-center justify-between px-20 py-0">
-        MAIN TEST
+        MAIN
       </main>
     </ThemeProvider>
   );
