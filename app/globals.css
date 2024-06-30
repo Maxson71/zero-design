@@ -2,6 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --appbar-height: 7rem;
+  --main-height: calc(100vh - var(--appbar-height));
+}
+
 [data-theme="light"] :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;

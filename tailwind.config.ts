@@ -18,6 +18,18 @@ const config: Config = {
       maxWidth: {
         '38rem': '38rem',
       },
+      minWidth: {
+        '38rem': '38rem',
+      },
+      height: {
+        'main-height': 'var(--main-height)',
+        'appbar-height': 'var(--appbar-height)',
+
+      },
+      minHeight : {
+        'main-height': 'var(--main-height)',
+        'appbar-height': 'var(--appbar-height)',
+      }
     },
   },
   darkMode: "class",

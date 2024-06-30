@@ -6,8 +6,8 @@ export default function Home() {
   return (
     <ThemeProvider>
       <Hotbar />
-      <main className="flex min-h-screen flex-col items-center justify-between px-20 py-0">
-          <div className="flex items-center justify-between py-0">
+      <main className="flex min-h-main-height flex-col items-center justify-between px-20 py-0">
+          <div className="flex flex-row items-center justify-between py-0 gap-8">
               <div className="max-w-38rem">
                   <p className="text-8xl ">A stylish UI Kit</p>
                   <p className="text-5xl leading-relaxed">for all web creatives</p>
