@@ -29,6 +29,15 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+h1 {
+  @apply text-8xl font-bold;
+  font-size: clamp(26px, 6vw, 96px);
+   p {
+    @apply text-4xl;
+    font-size: clamp(26px, 3.5vw, 58px);
+  }
+}
+
 .logo:hover .circle {
   transform: translateY(0rem);
 }

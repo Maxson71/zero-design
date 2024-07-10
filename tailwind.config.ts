@@ -16,15 +16,14 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       maxWidth: {
-        '38rem': '38rem',
+        '45rem': '45rem',
       },
       minWidth: {
-        '38rem': '38rem',
+        '45rem': '45rem',
       },
       height: {
         'main-height': 'var(--main-height)',
         'appbar-height': 'var(--appbar-height)',
-
       },
       minHeight : {
         'main-height': 'var(--main-height)',
