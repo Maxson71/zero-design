@@ -31,10 +31,10 @@ body {
 
 h1 {
   @apply text-8xl font-bold;
-  font-size: clamp(26px, 6vw, 96px);
+  font-size: clamp(2rem, 5vw, 6rem);
    p {
     @apply text-4xl;
-    font-size: clamp(26px, 3.5vw, 58px);
+    font-size: clamp(1.625rem, 3.5vw, 3.625rem);
   }
 }
 
@@ -44,4 +44,23 @@ h1 {
 
 .button {
   @apply bg-foreground text-background flex items-center justify-center px-7 py-3.5 leading-tight;
+}
+
+.home-block {
+  max-width: 100rem;
+}
+
+.info-block {
+    min-width: clamp(20rem, 6vw, 44.375rem);
+}
+
+.video-collage {
+    min-width: 100%;
+}
+
+@media (min-width: 10.24rem) {
+    .video-collage {
+        min-width: 27.25rem;
+        max-width: 45rem
+    }
 }
