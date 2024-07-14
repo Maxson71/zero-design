@@ -10,7 +10,7 @@ const Hotbar = () => {
     return (
         <div className="hotbar flex w-full items-center justify-between px-16 py-4 shadow-2xl h-appbar-height">
             <div className="flex flex-row space gap-8">
-                <Logo size={0.9}/>
+                <Logo size={0.95}/>
                 <nav className="flex items-center gap-4 ">
                     <Link href="/" className="text-lg leading-tight hover:text-default-500">Landing</Link>
                     <Link href="/" className="text-lg leading-tight hover:text-default-500">Company</Link>
