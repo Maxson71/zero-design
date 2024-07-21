@@ -30,7 +30,7 @@ body {
 }
 
 h1 {
-  @apply text-8xl font-bold;
+  @apply text-8xl font-semibold;
   font-size: clamp(2rem, 5vw, 6rem);
    p {
     @apply text-4xl;

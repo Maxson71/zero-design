@@ -2,6 +2,7 @@ import { ThemeProvider } from "next-themes";
 import Hotbar from "@/components/hotbar/Hotbar";
 import HomeIcon from "@/components/home-page/HomeIcon";
 
+
 export default function Home() {
     let video_1 = "https://assets-global.website-files.com/613f07ccd12aa4000cbc257a/613f07ccd12aa4fa1fbc2603_Pexels-Mart-Production-7767334-1-transcode.mp4";
     let video_2 = "https://assets-global.website-files.com/613f07ccd12aa4000cbc257a/613f07ccd12aa46dd2bc2601_Production%20Id%205192068-1-transcode.mp4";
@@ -51,7 +52,25 @@ export default function Home() {
                   </video>
               </div>
           </div>
+
+          <div className="inline-flex flex-row gap-12">
+              <img src="https://assets-global.website-files.com/613f07ccd12aa4000cbc257a/613f07ccd12aa45664bc26d4_description2-p-1080.jpeg"
+                   alt="img"
+                   height={440} width={660}/>
+              <div className="flex-col gap-8">
+                  <h2 className="text-8xl">
+                      Zero Design
+                  </h2>
+                  <p className="text-xl">
+                      Includes a total of 10 static pages, divided like this:
+                      4 Landing pages, 2 About pages, 2 Contact page, 1 Team page, 1 FAQ page.
+                      In addition to these, there are Webflow CMS driven pages: Blog (in 2 variations), Shop (in 2
+                      variations), Works and Careers.
+                      All with their respective single pages!
+                  </p>
+              </div>
+          </div>
       </main>
     </ThemeProvider>
-  );
+    );
 }
