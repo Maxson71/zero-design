@@ -16,10 +16,11 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       height: {
-        'main-height': 'var(--main-height)',
-        'appbar-height': 'var(--appbar-height)',
-        'home-image-height': 'calc(var(--main-height) - var(--appbar-height) + 2.5rem)',
-      }
+        "main-height": "var(--main-height)",
+        "appbar-height": "var(--appbar-height)",
+        "home-image-height":
+          "calc(var(--main-height) - var(--appbar-height) + 2.5rem)",
+      },
     },
   },
   darkMode: "class",

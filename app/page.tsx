@@ -2,6 +2,7 @@ import { ThemeProvider } from "next-themes";
 import Hotbar from "@/components/hotbar/Hotbar";
 import HomeIcon from "@/components/home-page/HomeIcon";
 import Frame from "@/components/Frame";
+import TitleFrame from "@/components/TitleFrame";
 
 export default function Home() {
   let video_1 =
@@ -16,7 +17,7 @@ export default function Home() {
       <Hotbar />
       <main
         className="main flex min-h-main-height flex-col 
-                       items-center justify-between px-20 py-0 
+                       items-center justify-between px-20 pb-0 
                        md:gap-16 xl:gap-20 2xl:gap-24 gap-12"
       >
         <div className="home-block flex items-center wrap justify-between w-full pt-14 pb-2 gap-8">
@@ -86,7 +87,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="inline-flex flex-row gap-12">
+        <div className="inline-flex w-full flex-row gap-12">
           <img
             src="https://assets-global.website-files.com/613f07ccd12aa4000cbc257a/613f07ccd12aa45664bc26d4_description2-p-1080.jpeg"
             alt="img"
@@ -116,6 +117,17 @@ export default function Home() {
               <Frame title="FORMS" />
               <Frame title="UTILITY" />
             </div>
+          </div>
+        </div>
+        <div id="landing" className="flex w-full flex-col justify-start gap-8">
+          <div className="flex">
+            <TitleFrame title="LANDING PAGES" />
+          </div>
+          <div className="flex flex-row flex-wrap gap-8">
+            <div className="size-96 bg-foreground-400"></div>
+            <div className="size-96 bg-foreground-400"></div>
+            <div className="size-96 bg-foreground-400"></div>
+            <div className="size-96 bg-foreground-400"></div>
           </div>
         </div>
       </main>
