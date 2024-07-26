@@ -45,7 +45,7 @@ h1 {
 .button {
   @apply bg-foreground text-background flex items-center justify-center px-7 py-3.5 leading-tight;
   &:hover {
-    @apply bg-foreground-700 duration-300;
+    @apply bg-warning duration-300;
   }
 }
 

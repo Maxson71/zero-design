@@ -6,7 +6,7 @@ import { PiShoppingCartThin } from "react-icons/pi";
 
 const Hotbar = () => {
   return (
-    <div className="hotbar sticky top-0 flex w-full items-center justify-between px-16 py-4 shadow-2xl h-appbar-height bg-background">
+    <div className="hotbar fixed z-10 top-0 flex w-full items-center justify-between px-16 py-4 shadow-2xl h-appbar-height bg-background">
       <div className="flex flex-row space gap-8">
         <Logo size={0.95} />
         <nav className="flex items-center gap-4 ">

@@ -3,6 +3,7 @@ import Hotbar from "@/components/hotbar/Hotbar";
 import HomeIcon from "@/components/home-page/HomeIcon";
 import Frame from "@/components/Frame";
 import TitleFrame from "@/components/TitleFrame";
+import Card from "@/components/Card";
 
 export default function Home() {
   let video_1 =
@@ -61,7 +62,7 @@ export default function Home() {
           </div>
           <div className="video-collage flex gap-2 justify-center">
             <video
-              className="video object-cover h-home-image-height max-w-80"
+              className="video object-cover h-home-image-height"
               autoPlay
               loop
               muted
@@ -69,7 +70,7 @@ export default function Home() {
               <source src={video_1} type="video/mp4" />
             </video>
             <video
-              className="video object-cover h-home-image-height max-w-80"
+              className="video object-cover h-home-image-height"
               autoPlay
               loop
               muted
@@ -77,7 +78,7 @@ export default function Home() {
               <source src={video_2} type="video/mp4" />
             </video>
             <video
-              className="video object-cover h-home-image-height max-w-80"
+              className="video object-cover h-home-image-height"
               autoPlay
               loop
               muted
@@ -124,10 +125,22 @@ export default function Home() {
             <TitleFrame title="LANDING PAGES" />
           </div>
           <div className="flex flex-row flex-wrap gap-8">
-            <div className="size-96 bg-foreground-400"></div>
-            <div className="size-96 bg-foreground-400"></div>
-            <div className="size-96 bg-foreground-400"></div>
-            <div className="size-96 bg-foreground-400"></div>
+            <Card
+              title="Landing 1"
+              src="https://assets-global.website-files.com/613f07ccd12aa4000cbc257a/613f07ccd12aa47c37bc2694_landing1.jpg"
+            />
+            <Card
+              title="Landing 1"
+              src="https://assets-global.website-files.com/613f07ccd12aa4000cbc257a/613f07ccd12aa47c37bc2694_landing1.jpg"
+            />
+            <Card
+              title="Landing 1"
+              src="https://assets-global.website-files.com/613f07ccd12aa4000cbc257a/613f07ccd12aa47c37bc2694_landing1.jpg"
+            />
+            <Card
+              title="Landing 1"
+              src="https://assets-global.website-files.com/613f07ccd12aa4000cbc257a/613f07ccd12aa47c37bc2694_landing1.jpg"
+            />
           </div>
         </div>
       </main>
