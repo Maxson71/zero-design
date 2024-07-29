@@ -88,7 +88,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="inline-flex w-full flex-row gap-12">
+        <div className="inline-flex max-w-none flex-row gap-12">
           <img
             src="https://assets-global.website-files.com/613f07ccd12aa4000cbc257a/613f07ccd12aa45664bc26d4_description2-p-1080.jpeg"
             alt="img"
@@ -124,21 +124,21 @@ export default function Home() {
           <div className="flex">
             <TitleFrame title="LANDING PAGES" />
           </div>
-          <div className="flex flex-row flex-wrap gap-8">
+          <div className="flex lg:flex-row flex-col flex-wrap gap-8">
             <Card
               title="Landing 1"
               src="https://assets-global.website-files.com/613f07ccd12aa4000cbc257a/613f07ccd12aa47c37bc2694_landing1.jpg"
             />
             <Card
-              title="Landing 1"
+              title="Landing 2"
               src="https://assets-global.website-files.com/613f07ccd12aa4000cbc257a/613f07ccd12aa47c37bc2694_landing1.jpg"
             />
             <Card
-              title="Landing 1"
+              title="Landing 3"
               src="https://assets-global.website-files.com/613f07ccd12aa4000cbc257a/613f07ccd12aa47c37bc2694_landing1.jpg"
             />
             <Card
-              title="Landing 1"
+              title="Landing 4"
               src="https://assets-global.website-files.com/613f07ccd12aa4000cbc257a/613f07ccd12aa47c37bc2694_landing1.jpg"
             />
           </div>

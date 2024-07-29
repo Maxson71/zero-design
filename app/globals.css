@@ -80,3 +80,7 @@ h1 {
     max-width: 50rem;
   }
 }
+
+.card {
+  width: clamp(25rem, 38vw, 50rem);
+}
