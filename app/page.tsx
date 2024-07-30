@@ -124,7 +124,30 @@ export default function Home() {
           <div className="flex">
             <TitleFrame title="LANDING PAGES" />
           </div>
-          <div className="flex lg:flex-row flex-col flex-wrap gap-8">
+          <div className="cards flex lg:flex-row flex-col flex-wrap gap-8">
+            <Card
+              title="Landing 1"
+              src="https://assets-global.website-files.com/613f07ccd12aa4000cbc257a/613f07ccd12aa47c37bc2694_landing1.jpg"
+            />
+            <Card
+              title="Landing 2"
+              src="https://assets-global.website-files.com/613f07ccd12aa4000cbc257a/613f07ccd12aa47c37bc2694_landing1.jpg"
+            />
+            <Card
+              title="Landing 3"
+              src="https://assets-global.website-files.com/613f07ccd12aa4000cbc257a/613f07ccd12aa47c37bc2694_landing1.jpg"
+            />
+            <Card
+              title="Landing 4"
+              src="https://assets-global.website-files.com/613f07ccd12aa4000cbc257a/613f07ccd12aa47c37bc2694_landing1.jpg"
+            />
+          </div>
+        </div>
+        <div id="company" className="flex w-full flex-col justify-start gap-8">
+          <div className="flex">
+            <TitleFrame title="COMPANY PAGES" />
+          </div>
+          <div className="mini-cards flex md:flex-row flex-col flex-wrap gap-8">
             <Card
               title="Landing 1"
               src="https://assets-global.website-files.com/613f07ccd12aa4000cbc257a/613f07ccd12aa47c37bc2694_landing1.jpg"

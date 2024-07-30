@@ -81,6 +81,27 @@ h1 {
   }
 }
 
-.card {
-  width: clamp(25rem, 38vw, 50rem);
+.cards > div {
+  max-width: 46rem;
+  width: 40vw;
+}
+
+.mini-cards > div {
+  max-width: 30rem;
+  width: 26vw;
+}
+
+@media (max-width: 1024px) {
+  .cards > div {
+    width: 100%;
+  }
+  .mini-cards > div {
+    width: 35vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .mini-cards > div {
+    width: 100%;
+  }
 }
