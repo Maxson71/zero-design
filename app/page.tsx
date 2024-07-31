@@ -131,38 +131,50 @@ export default function Home() {
             />
             <Card
               title="Landing 2"
-              src="https://assets-global.website-files.com/613f07ccd12aa4000cbc257a/613f07ccd12aa47c37bc2694_landing1.jpg"
+              src="https://assets-global.website-files.com/613f07ccd12aa4000cbc257a/613f07ccd12aa4d979bc2695_landing2.jpg"
             />
             <Card
               title="Landing 3"
-              src="https://assets-global.website-files.com/613f07ccd12aa4000cbc257a/613f07ccd12aa47c37bc2694_landing1.jpg"
+              src="https://assets-global.website-files.com/613f07ccd12aa4000cbc257a/613f07ccd12aa48b26bc2696_landing3.jpg"
             />
             <Card
               title="Landing 4"
-              src="https://assets-global.website-files.com/613f07ccd12aa4000cbc257a/613f07ccd12aa47c37bc2694_landing1.jpg"
+              src="https://assets-global.website-files.com/613f07ccd12aa4000cbc257a/613f07ccd12aa4986fbc2697_landing4.jpg"
             />
           </div>
         </div>
         <div id="company" className="flex w-full flex-col justify-start gap-8">
           <div className="flex">
-            <TitleFrame title="COMPANY PAGES" />
+            <TitleFrame title="COMPANY" />
           </div>
           <div className="mini-cards flex md:flex-row flex-col flex-wrap gap-8">
             <Card
-              title="Landing 1"
-              src="https://assets-global.website-files.com/613f07ccd12aa4000cbc257a/613f07ccd12aa47c37bc2694_landing1.jpg"
+              title="About 1"
+              src="https://assets-global.website-files.com/613f07ccd12aa4000cbc257a/613f07ccd12aa42f5cbc2698_about1.jpg"
             />
             <Card
-              title="Landing 2"
-              src="https://assets-global.website-files.com/613f07ccd12aa4000cbc257a/613f07ccd12aa47c37bc2694_landing1.jpg"
+              title="About 2"
+              src="https://assets-global.website-files.com/613f07ccd12aa4000cbc257a/613f07ccd12aa45369bc2699_about2.jpg"
             />
             <Card
-              title="Landing 3"
-              src="https://assets-global.website-files.com/613f07ccd12aa4000cbc257a/613f07ccd12aa47c37bc2694_landing1.jpg"
+              title="Contact 1"
+              src="https://assets-global.website-files.com/613f07ccd12aa4000cbc257a/613f07ccd12aa4f5c3bc269a_contact1.jpg"
             />
             <Card
-              title="Landing 4"
-              src="https://assets-global.website-files.com/613f07ccd12aa4000cbc257a/613f07ccd12aa47c37bc2694_landing1.jpg"
+              title="Contact 2"
+              src="https://assets-global.website-files.com/613f07ccd12aa4000cbc257a/613f07ccd12aa4c18fbc269b_contact2.jpg"
+            />
+            <Card
+              title="Contact 3"
+              src="https://assets-global.website-files.com/613f07ccd12aa4000cbc257a/614b42af1e085a4e9324801b_contact3.jpg"
+            />
+            <Card
+              title="Team"
+              src="https://assets-global.website-files.com/613f07ccd12aa4000cbc257a/613f07ccd12aa4a245bc269c_team.jpg"
+            />
+            <Card
+              title="FAQ"
+              src="https://assets-global.website-files.com/613f07ccd12aa4000cbc257a/613f07ccd12aa4fae9bc26b0_faq.jpg"
             />
           </div>
         </div>

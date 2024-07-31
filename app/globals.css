@@ -49,6 +49,10 @@ h1 {
   }
 }
 
+main {
+  margin-top: var(--appbar-height);
+}
+
 .main > div {
   max-width: 94rem;
 }

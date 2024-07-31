@@ -1,4 +1,6 @@
+"use client";
 import React from "react";
+import { useInView } from "react-intersection-observer";
 
 type CardProps = {
   title: string;
@@ -6,8 +8,20 @@ type CardProps = {
 };
 
 const Card: React.FC<CardProps> = (props) => {
+  const { ref, inView } = useInView({
+    triggerOnce: true,
+    threshold: 0.1,
+  });
+
   return (
-    <div className="flex-col bg-background text-foreground p-8 space-y-6 justify-start cursor-pointer duration-500 hover:bg-warning hover:-translate-y-3">
+    <div
+      ref={ref}
+      className={`flex-col bg-background text-foreground p-8 space-y-6 justify-start cursor-pointer duration-500 transform transition-all ${
+        inView
+          ? "opacity-100 translate-y-0 rotate-0"
+          : "opacity-0 translate-y-10 rotate-6"
+      } hover:bg-warning hover:-translate-y-3`}
+    >
       <img className="" src={props.src} alt={props.title} />
       <div className="flex text-2xl leading-none text-center uppercase ">
         {props.title}
