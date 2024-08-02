@@ -1,5 +1,5 @@
 import { ThemeProvider } from "next-themes";
-import Hotbar from "@/components/hotbar/Hotbar";
+import Header from "@/components/header/Header";
 import HomeIcon from "@/components/home-page/HomeIcon";
 import Frame from "@/components/Frame";
 import TitleFrame from "@/components/TitleFrame";
@@ -15,7 +15,7 @@ export default function Home() {
 
   return (
     <ThemeProvider>
-      <Hotbar />
+      <Header />
       <main
         className="main flex min-h-main-height flex-col 
                        items-center justify-between px-20 pb-0 
