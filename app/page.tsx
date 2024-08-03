@@ -4,6 +4,7 @@ import HomeIcon from "@/components/home-page/HomeIcon";
 import Frame from "@/components/Frame";
 import TitleFrame from "@/components/TitleFrame";
 import Card from "@/components/Card";
+import Image from "next/image";
 
 export default function Home() {
   let video_1 =
@@ -21,7 +22,7 @@ export default function Home() {
                        items-center justify-between px-20 pb-0 
                        md:gap-16 xl:gap-20 2xl:gap-24 gap-12"
       >
-        <div className="home-block flex items-center wrap justify-between w-full pt-14 pb-2 gap-8">
+        <div className="home-block flex lg:flex-row flex-col items-center justify-between w-full pt-14 pb-2 gap-8">
           <div className="info-block">
             <h1 className="title">
               A stylish UI Kit
@@ -60,9 +61,9 @@ export default function Home() {
               />
             </div>
           </div>
-          <div className="video-collage flex gap-2 justify-center">
+          <div className="video-collage gap-2 justify-center sm:flex hidden">
             <video
-              className="video object-cover h-home-image-height"
+              className="video object-cover lg:h-home-image-height"
               autoPlay
               loop
               muted
@@ -70,7 +71,7 @@ export default function Home() {
               <source src={video_1} type="video/mp4" />
             </video>
             <video
-              className="video object-cover h-home-image-height"
+              className="video object-cover lg:h-home-image-height"
               autoPlay
               loop
               muted
@@ -78,7 +79,7 @@ export default function Home() {
               <source src={video_2} type="video/mp4" />
             </video>
             <video
-              className="video object-cover h-home-image-height"
+              className="video object-cover lg:h-home-image-height"
               autoPlay
               loop
               muted
@@ -90,6 +91,7 @@ export default function Home() {
 
         <div className="inline-flex max-w-none flex-row gap-12">
           <img
+            className="object-cover"
             src="https://assets-global.website-files.com/613f07ccd12aa4000cbc257a/613f07ccd12aa45664bc26d4_description2-p-1080.jpeg"
             alt="img"
             height={440}

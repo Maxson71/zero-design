@@ -80,7 +80,7 @@ main {
 .video-collage {
   min-width: 27.5rem;
   > .video {
-    width: 30%;
+    width: 32.5%;
     max-width: 50rem;
   }
 }
