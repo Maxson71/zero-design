@@ -2,6 +2,7 @@
 import React from "react";
 import { useInView } from "react-intersection-observer";
 import Image from "next/image";
+import ImageComponent from "@/components/ImageComponent"
 
 type CardProps = {
   title: string;
@@ -24,7 +25,12 @@ const Card: React.FC<CardProps> = (props) => {
         } 
       hover:bg-warning hover:-translate-y-3`}
     >
-      <img className="" src={props.src} alt={props.title} />
+      <ImageComponent
+        src={props.src}
+        alt="card_image"
+        width={450}
+        height={350}
+      />
       <div className="flex text-2xl leading-none text-center uppercase ">
         {props.title}
       </div>

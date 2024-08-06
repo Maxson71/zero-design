@@ -4,7 +4,7 @@ import HomeIcon from "@/components/home-page/HomeIcon";
 import Frame from "@/components/Frame";
 import TitleFrame from "@/components/TitleFrame";
 import Card from "@/components/Card";
-import Image from "next/image";
+import ImageComponent from "@/components/ImageComponent";
 
 export default function Home() {
   let video_1 =
@@ -93,7 +93,7 @@ export default function Home() {
           <img
             className="object-cover"
             src="https://assets-global.website-files.com/613f07ccd12aa4000cbc257a/613f07ccd12aa45664bc26d4_description2-p-1080.jpeg"
-            alt="img"
+            alt="description2"
             height={440}
             width={660}
           />
