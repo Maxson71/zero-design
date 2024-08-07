@@ -7,13 +7,10 @@ import { Blurhash } from "react-blurhash"
 interface ImageComponentProps {
     src: string;
     alt: string;
-    width: number;
-    height: number;
-
 }
 
 
-const ImageComponent: React.FC<ImageComponentProps> = ({ src, alt, width, height }) => {
+const ImageComponent: React.FC<ImageComponentProps> = ({ src, alt }) => {
     const [imageLoaded, setImageLoaded] = useState(false)
 
     useEffect(
@@ -29,18 +26,14 @@ const ImageComponent: React.FC<ImageComponentProps> = ({ src, alt, width, height
     return (
         <>
             {!imageLoaded && (
-                <Blurhash
-                    hash="LEHV6nWB2yk8pyo0adR*.7kCMdnj"
-                    width={width}
-                    height={height}
-                    resolutionX={32}
-                    resolutionY={32}
-                    punch={1}
-                />
+                <div
+                    className="loading-img animate-pulse bg-default-300 flex flex-auto"
+                ></div>
             )}
             <img
                 src={src}
                 alt={alt}
+                loading="lazy"
                 style={imageLoaded ? {} : { display: "none" }}
             />
         </>

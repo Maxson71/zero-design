@@ -28,8 +28,6 @@ const Card: React.FC<CardProps> = (props) => {
       <ImageComponent
         src={props.src}
         alt="card_image"
-        width={450}
-        height={350}
       />
       <div className="flex text-2xl leading-none text-center uppercase ">
         {props.title}

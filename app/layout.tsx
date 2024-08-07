@@ -3,6 +3,8 @@ import React from "react";
 
 import { Jost } from "next/font/google";
 import "./globals.css";
+import { ThemeProvider } from "next-themes";
+import Header from "@/components/header/Header";
 
 const jost = Jost({ subsets: ["latin"] });
 
@@ -18,7 +20,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={jost.className}>{children}</body>
+      <body className={jost.className}>
+        <ThemeProvider>
+          <Header />
+          {children}
+        </ThemeProvider>
+      </body>
     </html>
   );
 }
