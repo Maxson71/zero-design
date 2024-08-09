@@ -1,8 +1,6 @@
 
-import Frame from "@/components/Frame";
 import TitleFrame from "@/components/TitleFrame";
 import Card from "@/components/Card";
-import ImageComponent from "@/components/ImageComponent";
 import HomeSection from "@/components/MainPage/sections/HomeSection";
 import DecriptionSection from "../components/MainPage/sections/DescriptionSection";
 

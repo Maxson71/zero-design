@@ -21,15 +21,15 @@ const ThemeSwitcher = () => {
   };
 
   return (
-      <div className="flex cursor-pointer" onClick={handleTheme}>
-          {
-              theme === "dark" ? (
-                  <PiSunDimThin className="hover:text-default-500 h-6 w-6"/>
-              ) : (
-                  <PiMoonThin className="hover:text-default-500 h-6 w-6"/>
-              )
-          }
-      </div>
+    <div className="flex cursor-pointer" onClick={handleTheme}>
+      {
+        theme === "dark" ? (
+          <PiSunDimThin className="hover:text-warning duration-300 h-6 w-6" />
+        ) : (
+          <PiMoonThin className="hover:text-warning duration-300 h-6 w-6" />
+        )
+      }
+    </div>
   );
 };
 
