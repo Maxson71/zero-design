@@ -36,14 +36,14 @@ const data = {
         { title: "Blog 1" },
         { title: "Blog 2" },
         { title: "Blog 3" },
-        { title: "Careers" },
+        { title: "Single Product Page" },
         { title: "Shop 1" },
         { title: "Shop 2" },
-        { title: "Single product page" },
-        { title: "Single post page" },
-        { title: "Single careers page" },
+        { title: "Single Post Page" },
+        { title: "Careers" },
+        { title: "Single Careers Page" },
         { title: "Works" },
-        { title: "Single work page" },
+        { title: "Single Work Page" },
       ],
     },
     {
@@ -70,18 +70,20 @@ const Footer = () => {
             {section.subsections ? (
               section.subsections.map((subsection, subsectionIndex) => (
                 <div key={subsectionIndex} className="flex flex-col gap-4">
-                  <p className="text-2xl leading-loose">{subsection.title}</p>
-                  {subsection.links.map((link, linkIndex) => (
-                    <p key={linkIndex} className="text-base leading-tight text-gray-800">
-                      {link.title}
-                    </p>
-                  ))}
+                  <p className="text-2xl">{subsection.title}</p>
+                  <div className='flex flex-col flex-wrap gap-3'>
+                    {subsection.links.map((link, linkIndex) => (
+                      <p key={linkIndex} className="text-base leading-tight text-gray-800">
+                        {link.title}
+                      </p>
+                    ))}
+                  </div>
                 </div>
               ))
             ) : (
               <>
-                <p className="text-2xl leading-loose">{section.title}</p>
-                <div className='flex flex-col flex-wrap gap-2'>
+                <p className="text-2xl">{section.title}</p>
+                <div className='flex flex-col flex-wrap gap-3'>
                   {section.links.map((link, linkIndex) => (
                     <p key={linkIndex} className="text-base leading-tight text-gray-800">
                       {link.title}
