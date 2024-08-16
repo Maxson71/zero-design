@@ -12,25 +12,25 @@ const Header = () => {
         <nav className="flex items-center gap-4 ">
           <Link
             href="#landing"
-            className="text-lg leading-tight hover:text-warning  duration-300"
+            className="text-lg leading-tight text-hover"
           >
             Landing
           </Link>
           <Link
-            href="/"
-            className="text-lg leading-tight hover:text-warning  duration-300"
+            href="#company"
+            className="text-lg leading-tight text-hover"
           >
             Company
           </Link>
           <Link
-            href="/"
-            className="text-lg leading-tight hover:text-warning  duration-300"
+            href="#cmspages"
+            className="text-lg leading-tight text-hover"
           >
             CMS Pages
           </Link>
           <Link
-            href="/"
-            className="text-lg leading-tight hover:text-warning  duration-300"
+            href="#utility"
+            className="text-lg leading-tight text-hover"
           >
             Utility
           </Link>
@@ -42,10 +42,10 @@ const Header = () => {
         </Link>
         <ThemeSwitcher />
         <Link href="/">
-          <CiSearch className="hover:text-warning  duration-300 cursor-pointer h-6 w-6" />
+          <CiSearch className="h-6 w-6 text-hover" />
         </Link>
         <Link href="/">
-          <PiShoppingCartThin className="hover:text-warning  duration-300 cursor-pointer h-6 w-6" />
+          <PiShoppingCartThin className="h-6 w-6 text-hover" />
         </Link>
       </div>
     </header>

@@ -63,17 +63,20 @@ const data = {
 
 const Footer = () => {
   return (
-    <footer className="footer z-10 top-0 flex gap-8 w-full items-start px-16 py-4 shadow-2xl bg-background">
-      <div className="flex gap-8">
+    <footer className="footer z-10 w-full flex flex-col lg:flex-row content-center gap-8 px-20 py-24 shadow-2xl bg-background">
+      <div className="min-w-96">
+        Subscribe our newsletter
+      </div>
+      <div className="info_footer flex flex-row flex-wrap gap-8">
         {data.sections.map((section, sectionIndex) => (
-          <div key={sectionIndex} className="flex flex-col gap-4">
+          <div key={sectionIndex} className="flex flex-col min-w-40 gap-4">
             {section.subsections ? (
               section.subsections.map((subsection, subsectionIndex) => (
                 <div key={subsectionIndex} className="flex flex-col gap-4">
                   <p className="text-2xl">{subsection.title}</p>
                   <div className='flex flex-col flex-wrap gap-3'>
                     {subsection.links.map((link, linkIndex) => (
-                      <p key={linkIndex} className="text-base leading-tight text-gray-800">
+                      <p key={linkIndex} className="text-base leading-tight text-default-700 text-hover">
                         {link.title}
                       </p>
                     ))}
@@ -85,7 +88,7 @@ const Footer = () => {
                 <p className="text-2xl">{section.title}</p>
                 <div className='flex flex-col flex-wrap gap-3'>
                   {section.links.map((link, linkIndex) => (
-                    <p key={linkIndex} className="text-base leading-tight text-gray-800">
+                    <p key={linkIndex} className="text-base leading-tight text-default-700 text-hover">
                       {link.title}
                     </p>
                   ))}
