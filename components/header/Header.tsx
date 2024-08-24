@@ -23,7 +23,7 @@ const Header = () => {
             Company
           </Link>
           <Link
-            href="#cmspages"
+            href="#cms_pages"
             className="text-lg leading-tight text-hover"
           >
             CMS Pages
