@@ -3,16 +3,33 @@ import { render, screen } from '@testing-library/react';
 import Header from '@/components/header/Header';
 import '@testing-library/jest-dom';
 
-jest.mock('@/components/theme/ThemeSwitcher', () => () => <div data-testid="theme-switcher" />);
-jest.mock('react-icons/ci', () => ({
-    CiSearch: (props: React.ComponentPropsWithoutRef<'div'>) => <div {...props} data-testid="search-icon" />,
-}));
+jest.mock('@/components/theme/ThemeSwitcher', () => {
+    const MockThemeSwitcher = () => <div data-testid="theme-switcher" />;
+    MockThemeSwitcher.displayName = 'ThemeSwitcher';
+    return MockThemeSwitcher;
+});
 
-jest.mock('react-icons/pi', () => ({
-    PiShoppingCartThin: (props: React.ComponentPropsWithoutRef<'div'>) => <div {...props} data-testid="cart-icon" />,
-}));
-jest.mock('@/components/logo/Logo', () => () => <div data-testid="logo" />);
+jest.mock('react-icons/ci', () => {
+    const MockCiSearch = (props: React.ComponentPropsWithoutRef<'div'>) => <div {...props} data-testid="search-icon" />;
+    MockCiSearch.displayName = 'CiSearch';
+    return {
+        CiSearch: MockCiSearch,
+    };
+});
 
+jest.mock('react-icons/pi', () => {
+    const MockPiShoppingCartThin = (props: React.ComponentPropsWithoutRef<'div'>) => <div {...props} data-testid="cart-icon" />;
+    MockPiShoppingCartThin.displayName = 'PiShoppingCartThin';
+    return {
+        PiShoppingCartThin: MockPiShoppingCartThin,
+    };
+});
+
+jest.mock('@/components/logo/Logo', () => {
+    const MockLogo = () => <div data-testid="logo" />;
+    MockLogo.displayName = 'Logo';
+    return MockLogo;
+});
 describe('Header Component', () => {
     test('renders the Header with navigation links and icons', () => {
         render(<Header />);
