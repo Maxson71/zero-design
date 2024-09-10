@@ -58,25 +58,43 @@ const data = {
 
 const Footer = () => {
   return (
-    <footer className="footer z-10 w-full flex flex-col lg:flex-row content-center gap-8 px-20 py-24 shadow-2xl bg-background">
-      <div className="min-w-96">
+    <footer className="footer z-10 w-full flex-col lg:flex-row flex gap-8 px-20 py-24 shadow-2xl bg-background ">
+      <div className="footer_info flex-1 flex-col min-w-96 text-2xl">
         Subscribe our newsletter
         <div className="flex flex-row">
-          <img src="/image/footer-icons/social_icon_1.svg" alt="Social Icon 1" width={90} height={90} />
-          <img src="/image/footer-icons/social_icon_2.svg" alt="Social Icon 2" width={90} height={90} />
-          <img src="/image/footer-icons/social_icon_3.svg" alt="Social Icon 3" width={90} height={90} />
+          <img
+            src="/image/footer-icons/social_icon_1.svg"
+            alt="Social Icon 1"
+            width={90}
+            height={90}
+          />
+          <img
+            src="/image/footer-icons/social_icon_2.svg"
+            alt="Social Icon 2"
+            width={90}
+            height={90}
+          />
+          <img
+            src="/image/footer-icons/social_icon_3.svg"
+            alt="Social Icon 3"
+            width={90}
+            height={90}
+          />
         </div>
       </div>
-      <div className="info_footer flex flex-row flex-wrap gap-8">
+      <div className="footer_list flex flex-row flex-wrap gap-8">
         {data.sections.map((section, sectionIndex) => (
           <div key={sectionIndex} className="flex flex-col min-w-40 gap-4">
             {section.subsections ? (
               section.subsections.map((subsection, subsectionIndex) => (
                 <div key={subsectionIndex} className="flex flex-col gap-4">
                   <p className="text-2xl">{subsection.title}</p>
-                  <div className='flex flex-col flex-wrap gap-3'>
+                  <div className="flex flex-col flex-wrap gap-3">
                     {subsection.links.map((link, linkIndex) => (
-                      <p key={linkIndex} className="text-base leading-tight text-default-700 text-hover">
+                      <p
+                        key={linkIndex}
+                        className="text-base leading-tight text-default-700 text-hover"
+                      >
                         {link.title}
                       </p>
                     ))}
@@ -86,15 +104,17 @@ const Footer = () => {
             ) : (
               <>
                 <p className="text-2xl">{section.title}</p>
-                <div className='flex flex-col flex-wrap gap-3'>
+                <div className="flex flex-col flex-wrap gap-3">
                   {section.links.map((link, linkIndex) => (
-                    <p key={linkIndex} className="text-base leading-tight text-default-700 text-hover">
+                    <p
+                      key={linkIndex}
+                      className="text-base leading-tight text-default-700 text-hover"
+                    >
                       {link.title}
                     </p>
                   ))}
                 </div>
               </>
-
             )}
           </div>
         ))}
